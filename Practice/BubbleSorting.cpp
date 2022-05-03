@@ -19,7 +19,7 @@ void quickSort(int* data, int start, int end) {
 	int i = start + 1, j = end, temp;
 	
 	while(i <= j) { // 엇갈릴 때까지 반복
-		while(i <= end && data[1] <= data[pivot]) { // pivot 값보다 큰 값을 만날 때까지 
+		while(i <= end && data[i] <= data[pivot]) { // pivot 값보다 큰 값을 만날 때까지 
 			i++;
 		}
 		while(j > start && data[j] >= data[pivot]) { // pivot 값보다 작은 값을 만날 때까지 
